@@ -1,6 +1,29 @@
+import { useEffect, useState } from "react";
 import { Navbar } from "./components/Navbar";
 
 function App() {
+  const [username, setUsername] = useState("dnlambb");
+  const [userData, setUserData] = useState(Object);
+
+  useEffect(() => {
+    fetchUser();
+  }, [username]);
+
+  var API = `https://api.github.com/users/${username}`;
+
+  const fetchUser = async () => {
+    const response = await fetch(API);
+    const jsonData = await response.json();
+    if (jsonData && jsonData.message !== "Not found") {
+      setUserData(jsonData);
+      console.log(jsonData);
+    } else if (username !== "") {
+      console.log("Username does not exist");
+    } else {
+      setUserData({});
+    }
+  };
+
   return (
     <>
       <Navbar />
