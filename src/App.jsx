@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { Navbar } from "./components/Navbar";
+import { SearchBar } from "./components/SearchBar";
+import { User } from "./components/User";
 
 function App() {
   const [username, setUsername] = useState("dnlambb");
@@ -32,6 +34,8 @@ function App() {
           <h1 className="text-3xl md:text-4xl font-bold text-gh-white text-center py-10">
             Github User Search
           </h1>
+          <SearchBar username={username} setUsername={setUsername} />
+          <User data={userData} />
         </section>
       </main>
     </>
