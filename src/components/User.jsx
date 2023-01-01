@@ -19,7 +19,7 @@ export const User = ({ data }) => {
             {!data.name ? "not available" : data.name}
           </h2>
           <a
-            className="text-gh-green md:text-xl"
+            className="text-gh-green md:text-xl hover:underline"
             href={!data.html_url ? "/" : data.html_url}
           >
             @{!data.login ? "not available" : data.login}
