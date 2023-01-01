@@ -4,6 +4,11 @@ export const SearchBar = ({username, setUsername}) => {
   const onClick = (e) => {
     setUsername(e)
   };
+  const handleKeyPress = (e, inputValue) => {
+    if(e.keyCode === 13) {
+      setUsername(inputValue)
+    }
+  }
 
   return (
     <>
@@ -18,6 +23,7 @@ export const SearchBar = ({username, setUsername}) => {
             <img src={iconSearch} alt="icon search" className="w-8" />
           </label>
           <input
+            onKeyDown={(e) => handleKeyPress(e, document.getElementById("inputSearch").value)}
             required
             id="inputSearch"
             type="text"
