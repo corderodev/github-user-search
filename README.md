@@ -2,7 +2,7 @@
 
 In this project I used the GitHub API to get the user profile data.
 
-**View deployment:** [github-user-search](https://dnlambb.github.io/github-user-search/)
+**View deployment:** [github-user-search](https://corderodev.github.io/github-user-search/)
 
 
 ## Tech Stack
@@ -25,7 +25,7 @@ In this project I used the GitHub API to get the user profile data.
 Clone the project
 
 ```bash
-  git clone https://github.com/dnlambb/github-user-search.git
+  git clone https://github.com/corderodev/github-user-search.git
 ```
 
 Go to the project directory
@@ -83,4 +83,4 @@ If you have any feedback, please write me at dnlambb@writeme.com
 
 ## Authors
 
-- [@dnlambb](https://www.github.com/dnlambb)
+- [@corderodev](https://www.github.com/corderodev)

@@ -4,7 +4,7 @@ import { SearchBar } from "./components/SearchBar";
 import { User } from "./components/User";
 
 function App() {
-  const [username, setUsername] = useState("dnlambb");
+  const [username, setUsername] = useState("corderodev");
   const [userData, setUserData] = useState(Object);
 
   useEffect(() => {
