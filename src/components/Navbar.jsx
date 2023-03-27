@@ -4,7 +4,7 @@ export const Navbar = () => {
       <ul className="flex gap-5 md:gap-8 text-lg w-fit">
         <li>
           <a
-            href="https://dnlambb.com"
+            href="https://corderdev.com"
             className="hover:text-gh-green transition-all"
           >
             Portfolio
@@ -12,7 +12,7 @@ export const Navbar = () => {
         </li>
         <li>
           <a
-            href="https://github.com/dnlambb"
+            href="https://github.com/corderdev"
             className="hover:text-gh-green transition-all"
           >
             Github
@@ -20,7 +20,7 @@ export const Navbar = () => {
         </li>
         <li>
           <a
-            href="https://github.com/dnlambb/github-user-search"
+            href="https://github.com/corderdev/github-user-search"
             className="hover:text-gh-green transition-all"
           >
             Repository
